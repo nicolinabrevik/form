@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookBeat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BookBeat</h1>
+    </header>
+    <form action="https://httpbin.org/anything" method="post">
+      <div class="inputFields">
+        <h2>Kom igång med ett konto</h2>
+        <p>
+          Skapa ett konto och prova BookBeat gratis i 90 dagar med 30 timmar
+          lyssning och läsning.
+        </p>
+        <p>Har du redan ett konto? <a href="#">Logga in</a></p>
+        <label for="firstName">Förnamn</label>
+        <input
+          id="firstName"
+          name="firstName"
+          type="text"
+          required
+          aria-required="true"
+          placeholder="Skriv ditt förnamn"
+        />
+
+        <label for="lastName">Efternamn</label>
+        <input
+          id="lastName"
+          name="lastName"
+          type="text"
+          required
+          aria-required="true"
+          placeholder="Skriv ditt efternamn"
+        />
+
+        <label for="email">Mailadress</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          aria-required="true"
+          placeholder="Skriv din mailadress"
+        />
+
+        <label for="password">Lösenord</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          required
+          aria-required="true"
+          placeholder="Skriv ditt lösenord"
+        />
+
+        <label for="checkbox">
+          <input
+            id="checkbox"
+            name="checkbox"
+            type="checkbox"
+            required
+            aria-required="true"
+          />
+          Jag har läst och godkänner de allmänna villkoren och
+          integritetspolicyn. Jag godkänner även marknadsföringsutskick tills
+          jag väljer att avstå.
+        </label>
+
+        <label for="submit"></label>
+        <button id="submit" type="submit">Skapa konto</button>
+      </div>
+    </form>
+  </body>
+</html>
